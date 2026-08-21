@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Apuntes de Secundaria</title>
+    <style>
+        /* Importamos tu fuente Comic Sans */
+        @font-face {
+            font-family: 'MiFuente';
+            src: url('comicsans.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'MiFuente', sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* --- NUEVO: Agrandamos el título principal --- */
+        h1 {
+            font-size: 3.5em; /* Controla el tamaño del título principal */
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* --- NUEVO: Agrandamos el texto general (el subtítulo) --- */
+        p {
+            font-size: 1.3em; /* Controla el tamaño de los textos normales */
+            color: #555;
+        }
+
+        /* Contenedor tipo galería para las materias */
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        /* Estilo para cada portada individual */
+        .materia {
+            text-align: center;
+            width: 220px;
+        }
+
+        .materia img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.2s; /* Efecto suave */
+        }
+
+        .materia img:hover {
+            transform: scale(1.05); /* La imagen se agranda un poco al pasar el mouse */
+        }
+
+        /* --- NUEVO: Agrandamos y ponemos en negrita los nombres de las materias --- */
+        .materia p {
+            font-size: 1.5em; 
+            font-weight: bold;
+            margin-top: 15px;
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Material de Estudio</h1>
+    <p>Haz clic en las portadas para abrir los PDF.</p>
+
+    <div class="galeria">
+        
+        <!-- Biología -->
+        <div class="materia">
+            <a href="Biología Secundaria.pdf" target="_blank">
+                <img src="Portada Biologia.PNG" alt="Biología">
+            </a>
+            <p>Biología</p>
+        </div>
+
+        <!-- ESI -->
+        <div class="materia">
+            <a href="ESI Secundaria.pdf" target="_blank">
+                <img src="Portada ESI.PNG" alt="ESI">
+            </a>
+            <p>ESI</p>
+        </div>
+
+        <!-- Física -->
+        <div class="materia">
+            <a href="Fisica Secundaria.pdf" target="_blank">
+                <img src="Portada Fisica.PNG" alt="Física">
+            </a>
+            <p>Física</p>
+        </div>
+
+        <!-- Historia -->
+        <div class="materia">
+            <a href="Historia Secundaria.pdf" target="_blank">
+                <img src="Portada Historia.PNG" alt="Historia">
+            </a>
+            <p>Historia</p>
+        </div>
+
+        <!-- Lengua y Literatura -->
+        <div class="materia">
+            <a href="Lengua y literatura Secundaria.pdf" target="_blank">
+                <img src="Portada de Lengua y Literatura.PNG" alt="Lengua y Literatura">
+            </a>
+            <p>Lengua y Literatura</p>
+        </div>
+
+        <!-- Matemática -->
+        <div class="materia">
+            <a href="Matematica Secundaria.pdf" target="_blank">
+                <img src="Portada Matematica.PNG" alt="Matemática">
+            </a>
+            <p>Matemática</p>
+        </div>
+
+        <!-- Química -->
+        <div class="materia">
+            <a href="Quimica Secundaria.pdf" target="_blank">
+                <img src="Portada Quimica.PNG" alt="Química">
+            </a>
+            <p>Química</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
